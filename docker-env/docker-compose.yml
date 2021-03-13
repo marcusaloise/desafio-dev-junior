@@ -1,0 +1,15 @@
+version: "2"
+services:
+  dbcontratos:
+    image: mysql
+    environment:
+      - MYSQL_DATABASE=contratosv1
+      - MYSQL_USER=ADMCOIMBRA
+      - MYSQL_PASSWORD=123456SETE
+      - MYSQL_ROOT_PASSWORD=ROOT123456SETE
+    command: --character-set-server=utf8 --collation-server=utf8_bin
+    volumes:
+      - ./mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    
