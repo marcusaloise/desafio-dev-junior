@@ -2,48 +2,48 @@ from dbmodel import *
 
 
 
-# Contratante.create(razao_social ='Atila ltda',
-#                     endereco ='Pinheiro machado',
-#                     cnpj ='12345678901234', 
-#                     telefone ='69984492828')
+Contratado.create(razao_social ='Atila ltda',
+                    endereco ='Pinheiro machado',
+                    cnpj ='12345678901234', 
+                    telefone ='69984492828')
 
 
-# Contratado.create(razao_social ='luisa ltda',
-#                     endereco ='Pinheiro machado',
-#                     cnpj ='12345678901234', 
-#                     telefone ='69984492828')
+Contratante.create(razao_social ='luisa ltda',
+                    endereco ='Pinheiro machado',
+                    cnpj ='12345678901234', 
+                    telefone ='69984492828')
 
-# TipoContrato.create(tipo ='Emprestimo',
-#                     objeto = 'Objeto do contrato emprestimo')
+TipoContrato.create(tipo ='Emprestimo',
+                    objeto = 'Objeto do contrato emprestimo')
 
-# TipoContrato.create(tipo ='Arrendamento',
-#                     objeto = 'Objeto do contrato de Arrendamento')
+TipoContrato.create(tipo ='Arrendamento',
+                    objeto = 'Objeto do contrato de Arrendamento')
 
-# TipoContrato.create(tipo ='Seguro',
-#                     objeto = 'Objeto do contrato de Seguro')
+TipoContrato.create(tipo ='Seguro',
+                    objeto = 'Objeto do contrato de Seguro')
 
-# TipoContrato.create(tipo ='Locação de Serviços e Equipamentos',
-#                     objeto = 'Objeto do contrato de Locação de Serviços e Equipamentos')
-
-
-
-# Contrato.create(contratante = '1', contratado = '1', tipo ='3', vigencia ='2001-09-28', carencia ='10',
-#                 prazo ='2002-10-28', valores ='280,50', status ='Ativo', datadecriacao ='2001-02-01 20:02:23')
+TipoContrato.create(tipo ='Locação de Serviços e Equipamentos',
+                    objeto = 'Objeto do contrato de Locação de Serviços e Equipamentos')
 
 
-# contratante = Contratante.get(Contratante.id == "1").get()
-# print('Razão Social ={}. Endereço do Contratante ={}. CNPJ = {}. Telefone = {}'.format(contratante.razao_social, contratante.endereco, contratante.cnpj, contratante.telefone))
+
+Contrato.create(contratante = '1', contratado = '1', tipo ='3', vigencia ='2001-09-28', carencia ='10',
+                prazo ='2002-10-28', valores ='280,50', status ='Ativo', datadecriacao ='2001-02-01 20:02:23')
+
+#contratado = Contratado.get(Contratado.id == "1").get()
+
+#print('Razão social' .format(Contratado.razao_social))
 
 # contratado = Contratado.get(Contratado.id == "1").get()
-# print('Razão Social ={}. Endereço do Contratado ={}. CNPJ = {}. Telefone = {}'.format(contratado.razao_social, contratado.endereco, contratado.cnpj, contratado.telefone))
+#     print('Razão Social ={}. Endereço do Contratado ={}. CNPJ = {}. Telefone = {}'.format(Contratado.razao_social, Contratado.endereco, Contratado.cnpj, Contratado.telefone))
 
 # tipocontrato = TipoContrato.get(TipoContrato.id == "3").get()
-# print('Tipo de Contrato ={}. Qual o objeto = {} '.format(tipocontrato.contrato, tipocontrato.objeto))
+#     print('Tipo de Contrato ={}. Qual o objeto = {} '.format(TipoContrato.contrato, TipoContrato.objeto))
 
-tiposcontrato = TipoContrato.select(TipoContrato.tipo, TipoContrato.objeto)
+# tiposcontrato = TipoContrato.select(TipoContrato.tipo, TipoContrato.objeto)
 
-for tipo in tiposcontrato:
-    print('Tipo de Contrato ={}.objeto = {} '.format(tipo.tipo, tipo.objeto))
+# for tipo in tiposcontrato:
+#     print('Tipo de Contrato ={}.objeto = {} '.format(tipo.tipo, tipo.objeto))
 
 
 # contratos = Contrato.select(Contrato.vigencia, Contrato.carencia).where(Contrato.status == "Ativo").get()
