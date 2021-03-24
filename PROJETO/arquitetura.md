@@ -10,9 +10,9 @@
 
 ### Features - backend:
 
-- Validador de CNPJ
-- Validador de endereço
-- Validador de Telefone
+- Validador de CNPJ 
+- Pegar endereço pelo CEP 
+- Validador de Telefone 
 - Criar contrato [OK]
 - cadastro do contratante [OK] 
 - cadastro do tipo do contratado [OK]
@@ -89,27 +89,27 @@ Status.
 Sendo possível filtrar por contratado, vigência, data de inserção e status.
 ### Modelo Banco de Dados:
 
-- Tabela contratantes:
+- Tabela contratantes: [OK]
     - contratante_ID (pkey)
     - razao_social (string)
     - endereco (string)
     - cnpj (int)
     - telefone (int)
 
-- Tabela contratado: 
+- Tabela contratado: [OK]
     - contratado_ID (pkey)
     - razão_social (string)
     - endereco (string)
     - cnpj (int)
     - telefone (int)
 
-- Tabela tipo_contrato:
+- Tabela tipo_contrato: [OK]
     - tipo_contrato_ID (pkey)
     - tipo [Empréstimos|Arrendamento|Seguro|Locação de Serviços e Equipamentos] (string)
     - objeto do contrato (string)
 
 
-- Tabela contratos:
+- Tabela contratos: [OK]
     - contrato_ID (pkey)
     - tipo_ID (fkey)
     - contratante_ID (fkey) 

@@ -2,3 +2,5 @@ wheel
 setuptools
 pymysql
 peewee
+validate-docbr
+pycep-correios
