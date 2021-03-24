@@ -13,13 +13,13 @@
 - Validador de CNPJ
 - Validador de endereço
 - Validador de Telefone
-- Criar contrato
-- cadastro do contratante
-- cadastro do tipo do contratado 
-- cadastro do tipo do contrato 
-- Atualizar contrato 
-- Deletar contrato 
-- Buscar contrato
+- Criar contrato [OK]
+- cadastro do contratante [OK] 
+- cadastro do tipo do contratado [OK]
+- cadastro do tipo do contrato [OK]
+- Atualizar contrato [OK]
+- Deletar contrato [OK]
+- Buscar contrato[OK]
 - manter as credencias do db de forma segura 
 
 #### Regra de Negocio 

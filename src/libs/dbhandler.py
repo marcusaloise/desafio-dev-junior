@@ -2,16 +2,41 @@ from dbmodel import *
 
 
 
-# Contratado.create(razao_social ='Atila ltda',
-#                     endereco ='Pinheiro machado',
-#                     cnpj ='12345678901234', 
-#                     telefone ='69984492828')
+# Contratado.create(razao_social ='Maria helena',
+#                     endereco ='São cristpvão',
+#                     cnpj ='59876245836987', 
+#                     telefone ='6987526348')
 
 
-# Contratante.create(razao_social ='luisa ltda',
-#                     endereco ='Pinheiro machado',
-#                     cnpj ='12345678901234', 
-#                     telefone ='69984492828')
+# Contratante.create(razao_social ='Jesus cristo',
+#                     endereco ='Aponiã',
+#                     cnpj ='35629875168954', 
+#                     telefone ='5689742685')
+
+
+# Contratado.create(razao_social ='lilu',
+#                     endereco ='Sapiens',
+#                     cnpj ='69583214569873', 
+#                     telefone ='5623495876')
+
+
+# Contratante.create(razao_social ='Laura',
+#                     endereco ='Caxias',
+#                     cnpj ='12346598754264', 
+#                     telefone = "6953214568")
+
+
+# Contratado.create(razao_social ='Alberto',
+#                     endereco ='Curitiba',
+#                     cnpj ='65987426531548', 
+#                     telefone ='6935987621')
+
+
+# Contratante.create(razao_social ='Edite',
+#                     endereco ='Pinhais',
+#                     cnpj ='12365498785264', 
+#                     telefone = '6985234659' )
+
 
 # TipoContrato.create(tipo ='Emprestimo',
 #                     objeto = 'Objeto do contrato emprestimo')
@@ -52,3 +77,74 @@ contrato = Contrato.select().where(Contrato.status == "Ativo")
 
 for item in contrato:
     print('Data da vigência = {}. Carencia = {}. Prazo = {}. Valor = {}. Status = {}. Data da Criação = {} '.format(item.vigencia, item.carencia, item.prazo, item.valores, item.status, item.datadecriacao))
+
+##############
+# update #####
+##############
+
+# res = (Contratante
+#        .update(razao_social="João Pedro")
+#        .where(Contratante.id == 1)
+#        .execute())
+
+# res = (Contratado
+#        .update(telefone = 6998892828)
+#        .where(Contratado.cnpj == 12345678901234)
+#        .execute())
+
+# res = (TipoContrato
+#        .update(objeto = "Novo objeto" )
+#        .where(TipoContrato.tipo == "Arrendamento" )
+#        .execute())
+
+# res = (Contrato
+#        .update(tipo = 4 )
+#        .where(Contrato.id == 2 )
+#        .execute())
+
+
+# res = (Contrato
+#        .update(contratante = 3 )
+#        .where(Contrato.id == 1 )
+#        .execute())
+
+# res = (Contrato
+#        .update(contratado = 2 )
+#        .execute())
+
+# res = (Contrato
+#        .update(vigencia = '2002-03-19' )
+#        .where(Contrato.id == 2 )
+#        .execute())
+
+# res = (Contrato
+#        .update(carencia = 18)
+#        .where(Contrato.id == 2 )
+#        .execute())
+       
+# res = (Contrato
+#        .update(valores = 270.7 )
+#        .where(Contrato.id == 2 )
+#        .execute())
+
+# res = (Contrato
+#        .update(status = 'Inativo' )
+#        .where(Contrato.id == 2 )
+#        .execute())
+
+
+##############
+# Delete #####
+##############
+
+
+# res = (Contrato
+#        .delete()
+#        .where(Contrato.id == 2 )
+#        .execute())
+
+
+# res = (Contratante
+#        .delete()
+#        .where(Contratante.id == 3 )
+#        .execute())
